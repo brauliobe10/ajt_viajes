@@ -1,0 +1,175 @@
+/* Funcion del archivo: Define variables de color, espaciado, sombras y tipografia. */
+/* ============================================================
+   Viajes AJT — Design Tokens
+   Única fuente de verdad para color, tipografía, espaciado.
+   ============================================================ */
+:root{
+  /* Brand */
+  --c-primary-950:#070d3a;
+  --c-primary-900:#0b1450;
+  --c-primary-800:#142076;
+  --c-primary-700:#1b2c8a;   /* azul profundo principal */
+  --c-primary-600:#2c40a8;
+  --c-primary-500:#3a51d1;
+  --c-primary-400:#6f82e6;
+  --c-primary-200:#c7cff7;
+  --c-primary-100:#dfe4fb;
+  --c-primary-50: #eef1ff;
+
+  --c-accent-700:#b38b00;
+  --c-accent-600:#e6c200;
+  --c-accent-500:#ffd60a;    /* amarillo CTA */
+  --c-accent-400:#ffe04a;
+  --c-accent-100:#fff7c2;
+
+  /* Neutrals (ink + surface) */
+  --c-ink-900:#0f172a;
+  --c-ink-800:#1e293b;
+  --c-ink-700:#334155;
+  --c-ink-600:#475569;
+  --c-ink-500:#64748b;
+  --c-ink-400:#94a3b8;
+  --c-ink-300:#cbd5e1;
+  --c-ink-200:#e2e8f0;
+  --c-ink-100:#f1f5f9;
+  --c-ink-50: #f8fafc;
+  --c-surface:#ffffff;
+  --c-bg:#f6f8fc;
+  --c-bg-soft:#eef2fa;
+  --c-border:#e5e7eb;
+
+  /* Theme surfaces: capa semántica para que claro/oscuro cambien sin tocar cada vista. */
+  --c-surface-raised:#ffffff;
+  --c-surface-muted:#f8fafc;
+  --c-surface-glass:rgba(255,255,255,.82);
+  --c-nav-bg:rgba(255,255,255,.12);
+  --c-nav-border:rgba(15,23,42,.06);
+  --c-overlay:rgba(11,20,80,.55);
+  --c-hero-overlay:rgba(7,13,58,.68);
+  --c-input-bg:#ffffff;
+  --c-input-border:#dbe3ef;
+  --c-table-head:#f8fafc;
+
+  /* Status */
+  --c-success-600:#15803d;
+  --c-success-500:#16a34a;
+  --c-success-100:#dcfce7;
+  --c-warning-600:#b45309;
+  --c-warning-500:#f59e0b;
+  --c-warning-100:#fef3c7;
+  --c-danger-600:#b91c1c;
+  --c-danger-500:#dc2626;
+  --c-danger-100:#fee2e2;
+  --c-info-600:#0369a1;
+  --c-info-500:#0ea5e9;
+  --c-info-100:#e0f2fe;
+
+  /* Type */
+  --font-sans: "Work Sans", "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-display: "Work Sans", "Inter", system-ui, sans-serif;
+
+  --fs-12:0.75rem; --fs-13:0.8125rem; --fs-14:0.875rem; --fs-15:0.9375rem;
+  --fs-16:1rem; --fs-18:1.125rem; --fs-20:1.25rem; --fs-22:1.375rem;
+  --fs-24:1.5rem; --fs-28:1.75rem; --fs-32:2rem; --fs-36:2.25rem;
+  --fs-44:2.75rem; --fs-56:3.5rem;
+
+  --lh-tight:1.15; --lh-snug:1.3; --lh-base:1.55; --lh-loose:1.75;
+
+  --fw-regular:400; --fw-medium:500; --fw-semibold:600; --fw-bold:700; --fw-black:800;
+
+  /* Radius */
+  --r-xs:4px; --r-sm:6px; --r-md:10px; --r-lg:14px; --r-xl:20px; --r-2xl:28px; --r-pill:999px;
+
+  /* Shadow (suave, capas) */
+  --sh-1: 0 1px 2px rgba(15,23,42,.06), 0 1px 1px rgba(15,23,42,.04);
+  --sh-2: 0 4px 12px -4px rgba(15,23,42,.10), 0 2px 4px -2px rgba(15,23,42,.06);
+  --sh-3: 0 20px 40px -20px rgba(27,44,138,.28), 0 8px 16px -8px rgba(15,23,42,.10);
+  --sh-ring: 0 0 0 4px rgba(58,81,209,.20);
+  --sh-focus: 0 0 0 3px rgba(255,214,10,.55);
+
+  /* Spacing scale (rem-based) */
+  --space-0:0; --space-1:.25rem; --space-2:.5rem; --space-3:.75rem; --space-4:1rem;
+  --space-5:1.25rem; --space-6:1.5rem; --space-8:2rem; --space-10:2.5rem;
+  --space-12:3rem; --space-16:4rem; --space-20:5rem; --space-24:6rem;
+
+  /* Layout */
+  --container-max: 1240px;
+  --container-narrow: 960px;
+  --nav-h: 72px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(.2,.7,.2,1);
+  --ease-in-out: cubic-bezier(.4,0,.2,1);
+  --t-fast: 150ms;
+  --t-base: 240ms;
+  --t-slow: 400ms;
+
+  /* Z */
+  --z-base:1; --z-sticky:50; --z-nav:60; --z-drawer:80; --z-modal:90; --z-toast:100;
+}
+
+/* Tema oscuro: redefine tokens compartidos para mantener contraste en todo el sitio. */
+html[data-theme="dark"]{
+  color-scheme:dark;
+  --c-primary-950:#030714;
+  --c-primary-900:#07102f;
+  --c-primary-800:#dce5ff;
+  --c-primary-700:#aebcff;
+  --c-primary-600:#8fa2ff;
+  --c-primary-500:#7c91f7;
+  --c-primary-400:#9cacf8;
+  --c-primary-200:#314075;
+  --c-primary-100:#1d274a;
+  --c-primary-50:#111a33;
+
+  --c-accent-700:#ffe56a;
+  --c-accent-600:#ffdc28;
+  --c-accent-500:#ffd60a;
+  --c-accent-400:#ffe780;
+  --c-accent-100:#3f3508;
+
+  --c-ink-900:#f8fafc;
+  --c-ink-800:#e5edf8;
+  --c-ink-700:#cbd5e1;
+  --c-ink-600:#a8b4c7;
+  --c-ink-500:#8b9aae;
+  --c-ink-400:#65758b;
+  --c-ink-300:#445166;
+  --c-ink-200:#2d384b;
+  --c-ink-100:#1c2638;
+  --c-ink-50:#131c2d;
+  --c-surface:#101827;
+  --c-bg:#07101f;
+  --c-bg-soft:#0d1728;
+  --c-border:#263248;
+
+  --c-success-600:#86efac;
+  --c-success-500:#4ade80;
+  --c-success-100:#12351f;
+  --c-warning-600:#facc15;
+  --c-warning-500:#fbbf24;
+  --c-warning-100:#3a2c08;
+  --c-danger-600:#fca5a5;
+  --c-danger-500:#f87171;
+  --c-danger-100:#3f1518;
+  --c-info-600:#7dd3fc;
+  --c-info-500:#38bdf8;
+  --c-info-100:#0d3147;
+
+  --c-surface-raised:#121c2d;
+  --c-surface-muted:#172235;
+  --c-surface-glass:rgba(16,24,39,.82);
+  --c-nav-bg:rgba(7,16,31,.18);
+  --c-nav-border:rgba(203,213,225,.12);
+  --c-overlay:rgba(2,6,23,.72);
+  --c-hero-overlay:rgba(2,6,23,.74);
+  --c-input-bg:#0e1828;
+  --c-input-border:#334155;
+  --c-table-head:#111b2d;
+
+  --sh-1:0 1px 2px rgba(0,0,0,.28),0 1px 1px rgba(255,255,255,.03);
+  --sh-2:0 12px 28px -20px rgba(0,0,0,.55),0 4px 10px -6px rgba(0,0,0,.45);
+  --sh-3:0 24px 54px -28px rgba(0,0,0,.72),0 8px 20px -12px rgba(0,0,0,.6);
+  --sh-ring:0 0 0 4px rgba(124,145,247,.26);
+  --sh-focus:0 0 0 3px rgba(255,214,10,.48);
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" fill="#e2e8f0"/>
+  <g transform="translate(520,300)" fill="#94a3b8">
+    <rect x="0" y="40" width="160" height="120" rx="8" fill="none" stroke="#94a3b8" stroke-width="3"/>
+    <circle cx="50" cy="80" r="15"/>
+    <polygon points="20,140 80,90 110,110 140,80 160,100 160,160 0,160"/>
+  </g>
+  <text x="600" y="490" text-anchor="middle" font-family="system-ui,sans-serif" font-size="24" fill="#94a3b8">Imagen no disponible</text>
+</svg>
